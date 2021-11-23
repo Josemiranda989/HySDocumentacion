@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Head todo la info que es para el navegador y no se ve, salvo el titulo. -->
+	<meta charset="UTF-8">
+	<title>HyS Documentación</title>
+	<!-- Estilos de Bootstrap que es codigo responsive y visual ya escrito por otro. -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+	<!-- Description, keywords, author. -->
+	<meta name="description" content="Documentación de Higiene y Seguridad actualizado para Argentina">
+	<meta name="keywords" content="Higiene, Seguridad, Pack, Resoluciones, Argentina, HyS, Documentacion, Doc">
+	<meta name="author" content="José Miranda">
+	<!-- codigo de colores y estilos escrito por nosotros -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Tipografia openSans -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+	<!-- esto es para que el navegador se de cuenta cuando estamos en un celuar o tableta-->
+	<meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+	<!-- Font Awesome -->
+	<script src="https://kit.fontawesome.com/9539ea912e.js" crossorigin="anonymous"></script>
+
+</head>
+<!-- <body> Todo lo que se ve en la pantalla del usuario -->
+<body>
+<!-- Loader -->
+<div class="loader"></div>
+
+<header>
+	<div class="container">
+		<div class="row top">
+			<!-- en esta linea cambiamos nuestro logo. -->
+			<div class="col-md-4"><a href="#home" data-ancla="home" class="off">
+				<img src="images/logogrande.png" alt="" class="logo"></a></div>
+			<div class="col-md-3"></div>
+			<div class="col-md-5">
+				<ul class='botonera'>
+					<li><a href="#home" data-ancla="nosotros">Home</a></li>
+					<li><a href="#pack" data-ancla="servicios">Pack</a></li>
+					<li><a href="#Beneficios" data-ancla="contacto">Beneficios</a></li>
+
+				</ul>
+
+			</div>
+		</div>
+	</div>
+</header>
+
+<div class="principal vertical-centered-text" id="home">
+	<div class="col-md-8 cta"><h1>Higiene y Seguridad Documentación</h1> 
+			<h4>Conseguí toda la documentación acerca de Higiene y Seguridad Laboral de la República Argentina</h4>
+			<p>Accedé tu pack por solo $500 ARS <small>(precio promocional)</small> </p>
+<a href="https://mpago.la/2VG8MmU" class="boton orange">COMPRAR PACK</a>
+</div>
+</div>
+
+<div class="nosotros orange" id="pack">
+	<div class="container">
+		<h1>Contenido del Pack</h1>
+		<p>
+		<ul class="contenido">
+			<li><i class="fas fa-list-ol"></i> Cantidad de Contenido: 1550 Archivos</i></li>
+			<li><i class="far fa-save"></i> Peso: 1.75GB</li>
+			<li><i class="fas fa-file-pdf"></i> Documentacion válida para la República Argentina</li>
+		</ul>
+		</p>
+		<img style="width:600px" src="/images/contenido.png" alt="">
+	</div>
+</div>
+
+
+<div class="container servicios" id="Beneficios">
+	<div class="row">
+		<div class="col-md-12">
+			<h1>Beneficios de Acceder a nuestro Pack</h1>
+		</div>
+	</div>
+	<div class="row images">
+		<div class="col-md-3">
+			<img src="images/orden.png" alt="">
+			<h3>Orden</h3>
+			<p>Documentación ordenada por categorías!</p>
+		</div>
+		<div class="col-md-3">
+			<img src="images/iram.png" alt="">
+			<h3>Normas IRAM</h3>
+			<p>Lineamientos necesarios para un efectivo sistema de gestión</p>
+		</div>
+		<div class="col-md-3">
+			<img src="images/oshas.png" alt="">
+			<h3>NORMAS OSHAS</h3>
+			<p>Crean un compromiso de seguridad y salud</p>
+		</div>
+		<div class="col-md-3">
+			<img src="images/srt.jfif" alt="">
+			<h3>Resoluciones</h3>
+			<p>Garantiza el efectivo cumplimiento del derecho a la salud y seguridad de la población cuando trabaja</p>
+		</div>
+	</div>
+	
+</div>
+
+<footer>
+	<img src="images/logogrande.png" alt="" class="logo"></a></div>
+	<div id="copyright">Copyright&copy; 2021 - Todos los derechos reservados</div>
+</footer>
+<!-- Codigo que hace que las acciones de botones y cuestiones responsive funcionen-->
+<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+<script>
+	// A $( document ).ready() block.
+$(document).ready(function() {    
+$('.top a').click(function(e){
+        e.preventDefault();
+        var offset = $($(this).attr('href')).offset().top;
+        $('html, body').animate({scrollTop:offset}, 600);
+        return false;
+    });
+
+});
+	
+</script>
+<script src="index.js"></script>
+</body>
+</html>
+
+
+
+<!-- <div class="col-2">
+  <a href="mailto:josemiranda989@gmail.com"><img src="images/001-mail.svg" alt=""></a>
+</div> -->
