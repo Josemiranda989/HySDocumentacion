@@ -122,15 +122,11 @@ h1{
 }
 
 footer{
+	color: rgba(255,255,255);
 	background: rgb(55,60,64);
 	padding: 10px;
 	display: flex;
-	justify-content: space-between;
-}
-
-footer h1{
-	text-align: center;
-	font-weight: 100;
+	justify-content: space-around;
 }
 
 #home {
